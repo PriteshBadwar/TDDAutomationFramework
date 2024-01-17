@@ -14,7 +14,7 @@ public class BaseTest {
 	LoginPage loginpage;
 	RegisterUser register;
 	
-	static WebDriver driver;
+public	static WebDriver driver;
 	@BeforeSuite
 	public void initBrowser()
 	{
