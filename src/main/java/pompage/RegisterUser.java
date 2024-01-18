@@ -69,7 +69,7 @@ public class RegisterUser {
 		name.sendKeys("dgfjd");
 //		firstname.sendKeys("SeptUser");
 		lastname.sendKeys("Morningbatch");
-		useremail.sendKeys("iuweryie@gmail.com");
+		useremail.sendKeys("prtioti@gmail.com");
 		phonenumber.sendKeys("9988776655");
 	
 		Select selOccupation = new Select(occupationDropdown);

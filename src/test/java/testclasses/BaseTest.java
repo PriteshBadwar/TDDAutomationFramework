@@ -11,8 +11,8 @@ import pompage.RegisterUser;
 
 public class BaseTest {
 	
-	LoginPage loginpage;
-	RegisterUser register;
+public	LoginPage loginpage;
+public	RegisterUser register;
 	
 public	static WebDriver driver;
 	@BeforeSuite

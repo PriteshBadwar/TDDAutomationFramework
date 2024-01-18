@@ -51,7 +51,7 @@ WebElement loginButton;
 	{
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-		username.sendKeys("iuweryie@gmail.com");
+		username.sendKeys("prtioti@gmail.com");
 		
 		password.sendKeys("Test@1234");
 	}
