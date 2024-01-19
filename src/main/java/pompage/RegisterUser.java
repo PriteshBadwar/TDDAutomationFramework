@@ -62,14 +62,14 @@ public class RegisterUser {
 		registerbutton.click();
 	}
 	
-	public void enteringDetails()
+	public void enteringDetails(String emailvalue)
 	{
 		WebElement name = driver.findElement(firstname);
 		
 		name.sendKeys("dgfjd");
 //		firstname.sendKeys("SeptUser");
 		lastname.sendKeys("Morningbatch");
-		useremail.sendKeys("prtioti@gmail.com");
+		useremail.sendKeys(emailvalue);
 		phonenumber.sendKeys("9988776655");
 	
 		Select selOccupation = new Select(occupationDropdown);

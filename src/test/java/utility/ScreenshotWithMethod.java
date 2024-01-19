@@ -11,7 +11,7 @@ import org.openqa.selenium.io.FileHandler;
 public class ScreenshotWithMethod {
 	
 	
-	public void captureScreenshot(WebDriver driver, String filename) throws IOException 
+	public static String captureScreenshot(WebDriver driver, String filename) throws IOException 
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;// typecasting driver to the TakeScreenshot Interface
 
@@ -22,6 +22,8 @@ public class ScreenshotWithMethod {
 		File file = new File(path);// To locate the path as system path
 
 		FileHandler.copy(source, file);// To copy the screenshot to the defined path
+		
+		return path;
 		
 	}
 

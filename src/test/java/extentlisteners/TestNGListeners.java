@@ -41,14 +41,19 @@ public static ExtentTest test;
 		System.out.println(nameOfTestCase+" Test case failed");
 		
 		test.fail(result.getThrowable());
-		
-		ScreenshotWithMethod sc = new ScreenshotWithMethod();
-		
 		try {
-			sc.captureScreenshot(driver, result.getName());
+		String path = ScreenshotWithMethod.captureScreenshot(driver, nameOfTestCase);
+				
+			test.addScreenCaptureFromPath(path);
 		} catch (IOException e) {
 			System.out.println("Exception arrived while taking the screenshot");
 		}
+		
+		
+		
+		
+		
+		
 		
 	}
 

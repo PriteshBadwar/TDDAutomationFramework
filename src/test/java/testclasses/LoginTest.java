@@ -1,18 +1,25 @@
 package testclasses;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import extentlisteners.TestNGListeners;
+import utility.ReadPropData;
+import utility.TimeValueGenerator;
 
 public class LoginTest extends TestNGListeners {
 	
 	@Test(priority = 4)
-	public void loginToApp()
+	public void loginToApp() throws IOException
 	{	
 		test.info("entering the credentials");
 		
-		loginpage.enterCredentials();
+		ReadPropData data = new ReadPropData();
+		
+		String emailValue= data.getPropData("emailaddress");
+		loginpage.enterCredentials(TimeValueGenerator.getTime()+emailValue);
 		
 		test.info("Clicking on login button");
 		
@@ -28,7 +35,7 @@ public class LoginTest extends TestNGListeners {
 		String title= loginpage.getTitleOfPage();
 		
 		test.info("Validating the title");
-		Assert.assertEquals(title, "Let's Shop");
+		Assert.assertEquals(title, "Let'ss Shop");
 
 
 	}

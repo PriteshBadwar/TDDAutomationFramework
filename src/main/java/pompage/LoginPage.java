@@ -47,11 +47,12 @@ WebElement loginButton;
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void enterCredentials()
+	public void enterCredentials(String email)
 	{
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-		username.sendKeys("prtioti@gmail.com");
+		
+		username.sendKeys(email);
 		
 		password.sendKeys("Test@1234");
 	}

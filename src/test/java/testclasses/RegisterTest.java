@@ -1,18 +1,26 @@
 package testclasses;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import extentlisteners.TestNGListeners;
+import utility.ReadPropData;
+import utility.TimeValueGenerator;
 
 public class RegisterTest extends TestNGListeners {
 	
 	@Test(priority = 1)
-	public void registerUser()
+	public void registerUser() throws IOException
 	{
 		test.info("Clicking on register");
 		register.clickOnRegister();
 		test.info("entering the details of user");
-		register.enteringDetails();
+		ReadPropData rp = new ReadPropData();
+		
+		String data = rp.getPropData("emailaddress");
+		
+		register.enteringDetails(TimeValueGenerator.getTime()+data);
 	}
 
 	
