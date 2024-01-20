@@ -11,40 +11,40 @@ import org.openqa.selenium.support.ui.Select;
 
 public class RegisterUser {
 	WebDriver driver;
-	By firstname  = By.xpath("//*[@id='firstName']");
+	private	By firstname  = By.xpath("//*[@id='firstName']");
 	
 	@FindBy(xpath = "//*[text()='Register']")
-	WebElement registerbutton;
+	private	WebElement registerbutton;
 	
 //	@FindBy(xpath = "//*[@id='firstName']")
 //	WebElement firstname;
 	
 	@FindBy(xpath = "//*[@id='lastName']")
-	WebElement lastname;
+	private WebElement lastname;
 		
 	@FindBy(xpath = "//*[@id='userEmail']")
-	WebElement useremail;
+	private	WebElement useremail;
 	
 	@FindBy(xpath = "//*[@id='userMobile']")
-	WebElement phonenumber;
+	private	WebElement phonenumber;
 	
 	@FindBy(xpath = "//*[@id='userPassword']")
-	WebElement password;
+	private	WebElement password;
 	
 	@FindBy(xpath = "//form//select")
-	WebElement occupationDropdown;
+	private	WebElement occupationDropdown;
 	
 	@FindBy(xpath = "//*[@value='Male']")
-	WebElement radioButton;
+	private	WebElement radioButton;
 	
 	@FindBy(xpath = "//*[@id='confirmPassword']")
-	WebElement confirmPassword;
+	private	WebElement confirmPassword;
 	
 	@FindBy(xpath = "//*[@type='checkbox']")
-	WebElement checkbox;
+	private	WebElement checkbox;
 	
 	@FindBy(xpath = "//*[@id='login']")
-	WebElement registerfinalButton;
+	private	WebElement registerfinalButton;
 	
 	
 	@FindBy(xpath = "//*[text()='Login']")

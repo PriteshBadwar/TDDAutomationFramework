@@ -11,18 +11,18 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
 	
-	WebDriver driver;
+private	WebDriver driver;
 //	If we want to locate both the locator over the webpage and then we want to perform the operation then we have to use @FindBys
 	@FindBys({
 		@FindBy(xpath = "//*[@id='userEmail']"),
 		
 		@FindBy(xpath="//*[@type='email']")
 	})
-	WebElement  username;
+	private	WebElement  username;
 	
 	
 	@FindBy(xpath = "//*[@id='userPassword']")
-	WebElement password;
+	private 	WebElement password;
 	
 //	@FindBy(xpath = "//*[@id='login']")
 //	WebElement loginButton;
@@ -34,7 +34,7 @@ public class LoginPage {
 			@FindBy(xpath = "//*[@id='login123']")
 		}
 		)
-WebElement loginButton;
+private WebElement loginButton;
 
 
 

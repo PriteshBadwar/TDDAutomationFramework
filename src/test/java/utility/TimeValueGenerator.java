@@ -7,7 +7,7 @@ public class TimeValueGenerator {
 	
 	public static String getTime()
 	{
-		DateTimeFormatter dff = DateTimeFormatter.ofPattern("dd mm yyyy");
+		DateTimeFormatter dff = DateTimeFormatter.ofPattern("dd MM yyyy HH mm");
 		
 		LocalDateTime now	= LocalDateTime.now();
 		
