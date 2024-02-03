@@ -25,12 +25,12 @@ public	static WebDriver driver;
 	{
 		ChromeOptions options = new ChromeOptions();
 		
-//		options.addArguments("start-maximized");
-//		options.addArguments("--incognito");
+		options.addArguments("start-maximized");
+		options.addArguments("--incognito");
 		
-		options.addArguments("window-size=1400,3468");
-		
-		options.addArguments("--Headless");
+//		options.addArguments("window-size=1400,3468");
+//		
+//		options.addArguments("--Headless");
 		
 		
 		ReadPropData rp = new ReadPropData();
