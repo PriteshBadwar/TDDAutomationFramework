@@ -19,6 +19,8 @@ public class LoginTest extends TestNGListeners {
 		ReadPropData data = new ReadPropData();
 		
 		String emailValue= data.getPropData("emailaddress");
+		
+		
 		loginpage.enterCredentials(TimeValueGenerator.getTime()+emailValue);
 		
 		test.info("Clicking on login button");
