@@ -37,7 +37,7 @@ public class LoginTest extends TestNGListeners {
 		String title= loginpage.getTitleOfPage();
 		
 		test.info("Validating the title");
-		Assert.assertEquals(title, "Let'ss Shop");
+		Assert.assertEquals(title, "Let's Shop");
 
 
 	}
